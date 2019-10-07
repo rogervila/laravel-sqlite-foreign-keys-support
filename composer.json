@@ -1,0 +1,39 @@
+{
+    "name": "rogervila/laravel-sqlite-foreign-keys-support",
+    "description": "Laravel SQLite Foreign Keys Support",
+    "keywords": [
+        "Laravel SQLite Foreign Keys Support"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roger Vilà",
+            "email": "rogervila@me.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0.0",
+        "laravel/framework": "5.8|6.x",
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0|^7.0|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SQLiteForeignKeys\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\SQLiteForeignKeys\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
