@@ -1,4 +1,4 @@
-<p align="center"><img height="500" src="https://i1.wp.com/www.brandsoftonline.com/wp-content/uploads/2017/07/laravel-sqlite.jpg?fit=750%2C350" alt="Laravel SQLite Foreign Keys Support" /></p>
+<p align="center"><img src="https://i1.wp.com/www.brandsoftonline.com/wp-content/uploads/2017/07/laravel-sqlite.jpg?fit=750%2C350" alt="Laravel SQLite Foreign Keys Support" /></p>
 
 [![Build Status](https://travis-ci.org/rogervila/laravel-sqlite-foreign-keys-support.svg?branch=master)](https://travis-ci.org/rogervila/laravel-sqlite-foreign-keys-support)
 [![Build status](https://ci.appveyor.com/api/projects/status/o26dqiqhrpgjt2wc/branch/master?svg=true)](https://ci.appveyor.com/project/roger-vila/laravel-sqlite-foreign-keys-support/branch/master)
