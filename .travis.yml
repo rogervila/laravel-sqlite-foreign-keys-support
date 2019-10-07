@@ -15,10 +15,10 @@ before_script:
 
 script:
   - vendor/bin/phpunit
-  # - sonar-scanner -Dsonar.projectKey=rogervila_laravel-sqlite-foreign-keys-support -Dsonar.sources=. -Dsonar.exclusions='vendor/**, tests/**' -Dsonar.php.tests.reportPath=junit-logfile.xml -Dsonar.php.coverage.reportPaths=clover.xml
+  - sonar-scanner -Dsonar.projectKey=rogervila_laravel-sqlite-foreign-keys-support -Dsonar.sources=. -Dsonar.exclusions='vendor/**, tests/**' -Dsonar.php.tests.reportPath=junit-logfile.xml -Dsonar.php.coverage.reportPaths=clover.xml
 
-# addons:
-#   sonarcloud:
-#     organization: "rogervila-github"
-#     token:
-#       secure: "6EtODh4KA7RkejGI9Lq7C57BdzB/tfdqKujQU2I7YIDLSfwYkIRVFVGfo1ah9pfYI0RGRuPz5PWEZqnApbMMCnBPT6PutHf19DEbK1TFqcQR1JHp2AAuXB71wLiYyi0hdBBf+65k2UeiOnS0JSPyxAZuN/nVTMwxGVdVFDzp0q7XHeA7zL+jz5K3vkepbND+AWeHYklAelYEagIuO5eWEyZhZKR8nNh1M2JQnddqZBPMNJKZNK/YH9DJPYzaQIFPXaAXsQaBOLhSdHWEQNPcwswK0lL7fTskX2xQZ0cFTR/rZP7ZYXq2lVSNPJA659sjzfrrAlxKp7eER1Y+QuyNPW1bFJx8W73OkSRwB9QIB1zVdjR8H6TIRzk7j8TGsol6ISrxH76UNOdJh/UDQWcbAAL2x7OQm+l122DZzoGgrUsD7F9btc4riKNoIEIKPSmFTRXWzUIETa3uI0jCZKg+Z2+RQQTMn+pmm/i5javClphHd82LgwjvFfnRiND5fxzb0+0sZ72tltqUzOuWTTvhslUoTRF0ff5tX83VI5g/Jokrp+sNXZEcvXby7nnpvhwep8XzWrfQ+DjdAXvYUGtWVVeUGcyOnDEe/8Y0w5NDDBGn5UwxxmUeX78IDbbcli1W70+Bq5qN4/ocjvWdw/TaHykbKAXLGarnLVQAj/Q68Wg="
+addons:
+  sonarcloud:
+    organization: "rogervila-github"
+    token:
+      secure: "UDHdGtgcfxwBvyx9iMG3g7LCQxXTHDM80bfb1VQD7yOxh1sRoTCMJO+K8aH7nfvjwH7l0TZIeIBwYQ1cbcsnyIxiVo+XHrT0EkAyXvjWbQwpYjEU0mlQl8yvZXkS3KRF9PthDv3wtLnX132MaDVCdeZXP1AFGpShXSxpVxNByQ5DTLBmtOyeJXo5qeN5g6QpSN5BpbBGQPnp0vuj8D1OMt9ak5l8lbgDhJw3DxqZJMSi/a7ruzoVp2DqZJ3y4PqV9KoicNSCy9y8vsyVdHkKTf/rKlZqwZN3/o6ZtCMDERATmYKv8W/Ej2lUd1jcELz8ehINXf6bMp42C6z2PGb3Rptpf8XEUS081RvGmVMMpmnY+yoPao8dKzKxrLnwpKgxix+1Qkf7Zey5pJXAGNcBoXUa4TgIdonnq6Mv/q2jiYJtocwc6Q7t2YKuvfYKcoaO9/BwwbA4JtDyIjwtjR74uvwj/1juZ0u3kmyq0+pUpWqJ3rkDdV/ZNLLROQB1K46ATxcNDtz79ppdT/5T750H95GZ6JTSsE+sTES8uoLyNhBmBYkWFZBfNBCXppjs0wCRONcIQTMcSWsYuWKJ//uMsnibIOuaDmCoaNFvQN+Sq+3B4/OreQ5fyd6/tdUcjV1jdT4DXmqAZUDyzpPlck7wQt1tjCqu4WkWoMZHTcaXANk="
