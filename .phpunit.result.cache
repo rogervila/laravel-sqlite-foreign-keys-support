@@ -1,1 +1,0 @@
-C:37:"PHPUnit\Runner\DefaultTestResultCache":176:{a:2:{s:7:"defects";a:1:{s:52:"Tests\Feature\BlueprintTest::test_migrations_can_run";i:4;}s:5:"times";a:1:{s:52:"Tests\Feature\BlueprintTest::test_migrations_can_run";d:0.548;}}}

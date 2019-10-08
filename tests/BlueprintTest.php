@@ -45,12 +45,9 @@ class BlueprintTest extends \Orchestra\Testbench\TestCase
     /**
      * @return void
      */
-    public function test_migrations_can_run()
+    public function test_migrations_are_working()
     {
-        try {
-            $this->assertTrue(true, 'The fact that this test is running means that migrations have been successfully run');
-        } catch (\Exception $e) {
-            $this->fail($e->getMessage());
-        }
+        $this->assertEquals(0, \DB::table('users')->count());
+        $this->assertEquals(0, \DB::table('roles')->count());
     }
 }
