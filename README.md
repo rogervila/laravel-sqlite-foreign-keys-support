@@ -14,7 +14,7 @@
 
 ## About
 
-Laravel SQLite Foreign Keys Support brings a base setup useful for developing PHP packages.
+Laravel SQLite Foreign Keys Support fixes `SQLite doesn't support dropping foreign keys` messages when running migrations.
 
 ## Author
 
