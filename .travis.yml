@@ -9,13 +9,10 @@ cache:
   directories:
     - $HOME/.composer/cache
 
-before_script:
-  - curl -s http://getcomposer.org/installer | php
-  - php composer.phar install --dev
-
 script:
+  - composer install
   - vendor/bin/phpunit
-  - sonar-scanner -Dsonar.projectKey=rogervila_laravel-sqlite-foreign-keys-support -Dsonar.sources=. -Dsonar.exclusions='vendor/**, tests/**' -Dsonar.php.tests.reportPath=junit-logfile.xml -Dsonar.php.coverage.reportPaths=clover.xml
+  - if [[ ${TRAVIS_PHP_VERSION:0:3} == "7.4" ]]; then sonar-scanner -Dsonar.projectKey=rogervila_laravel-sqlite-foreign-keys-support -Dsonar.sources=. -Dsonar.exclusions='vendor/**, tests/**' -Dsonar.php.tests.reportPath=junit-logfile.xml -Dsonar.php.coverage.reportPaths=clover.xml; fi
 
 addons:
   sonarcloud:
